@@ -37,7 +37,7 @@
     sessionStorage.setItem('sessionToken', token);
   }
 
-  // Sends the login to the API
+  // Sends the login data to auth web
   async function loginWithApi(username, password) {
     const response = await fetch(AUTH_API_URL, {
       method: 'POST',
@@ -57,7 +57,7 @@
     return response.json();
   }
 
-  // Handles the login form
+  // Signs user in
   async function handleLogin(event) {
     event.preventDefault();
 

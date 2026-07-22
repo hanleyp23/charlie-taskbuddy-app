@@ -3,23 +3,362 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>my app</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+
+  <title>Task Buddy</title>
 </head>
 
-<body>
-  <h1>2 states:</h1>
+<body class="taskbuddy-page">
+  <nav class="taskbuddy-nav">
+    <div class="container nav-content">
+      <a
+        class="taskbuddy-nav-brand"
+        href="index.html"
+      >
+        <i class="bi bi-clipboard-check"></i>
+        TaskBuddy
+      </a>
 
-  <p id="loginState">logged in (hello, username)...logout btn</p>
+      <div class="taskbuddy-nav-links">
+        <a
+          class="active"
+          href="index.html"
+        >
+          Home
+        </a>
 
-  <a href="pages/auth.html">login/logout</a>
+        <a href="#taskListHeading">
+          Tasks
+        </a>
 
-  <!-- <p id="logoutState">logged out...login btn</p> -->
+        <a href="pages/form.html">
+          Add Task
+        </a>
 
+        <a href="pages/admin.html">
+          Admin
+        </a>
+
+        <button
+          id="logoutBtn"
+          class="btn btn-sm btn-outline-light"
+          type="button"
+        >
+          Sign Out
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container taskbuddy-header">
+    <div class="taskbuddy-logo">
+      TaskBuddy
+    </div>
+
+    <p class="mb-0">
+      Welcome,
+      <strong id="profileName">User</strong>
+    </p>
+  </header>
+
+  <main class="container pb-5">
+    <section class="task-controls mb-4">
+      <div class="mb-3">
+        <label
+          for="taskSearch"
+          class="visually-hidden"
+        >
+          Search tasks
+        </label>
+
+        <input
+          id="taskSearch"
+          class="form-control form-control-lg search-box"
+          type="search"
+          placeholder="Search Tasks..."
+        >
+      </div>
+
+      <h2 class="h6 text-uppercase">
+        Filter By:
+      </h2>
+
+      <div class="row g-3">
+        <div class="col-12 col-md-3">
+          <label
+            for="categoryFilter"
+            class="form-label"
+          >
+            Category
+          </label>
+
+          <select
+            id="categoryFilter"
+            class="form-select"
+          >
+            <option value="all">
+              All categories
+            </option>
+            <option value="school">
+              School
+            </option>
+            <option value="work">
+              Work
+            </option>
+            <option value="personal">
+              Personal
+            </option>
+          </select>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <label
+            for="priorityFilter"
+            class="form-label"
+          >
+            Priority
+          </label>
+
+          <select
+            id="priorityFilter"
+            class="form-select"
+          >
+            <option value="all">
+              All priorities
+            </option>
+            <option value="high">
+              High
+            </option>
+            <option value="medium">
+              Medium
+            </option>
+            <option value="low">
+              Low
+            </option>
+          </select>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <label
+            for="sortTasks"
+            class="form-label"
+          >
+            Sort
+          </label>
+
+          <select
+            id="sortTasks"
+            class="form-select"
+          >
+            <option value="date">
+              Date
+            </option>
+            <option value="title">
+              Title
+            </option>
+          </select>
+        </div>
+
+        <div class="col-12 col-md-3 d-flex align-items-end">
+          <button
+            id="favoritesOnlyBtn"
+            class="btn taskbuddy-button w-100"
+            type="button"
+          >
+            <i class="bi bi-star"></i>
+            Favorites
+          </button>
+        </div>
+      </div>
+
+      <a
+        class="btn taskbuddy-button mt-3"
+        href="pages/form.html"
+      >
+        <i class="bi bi-plus-circle"></i>
+        Add Task
+      </a>
+    </section>
+
+    <section aria-labelledby="taskListHeading">
+      <h1
+        id="taskListHeading"
+        class="section-heading"
+      >
+        Your Tasks
+      </h1>
+
+      <div
+        id="taskList"
+        class="row g-3"
+      >
+       
+        <div class="col-12">
+          <article class="card task-card">
+            <div class="card-body">
+              <div
+                class="d-flex justify-content-between gap-3"
+              >
+                <div>
+                  <h2 class="h5">
+                    Finish SQL Homework
+                  </h2>
+
+                  <p>
+                    Complete the Chapter 6 assignment.
+                  </p>
+                </div>
+
+                <span class="favorite-button">
+                  <i class="bi bi-star"></i>
+                </span>
+              </div>
+
+              <span class="badge text-bg-light border">
+                School
+              </span>
+
+              <span class="badge text-bg-light border">
+                High
+              </span>
+
+              <span class="badge text-bg-light border">
+                Due July 30, 2026
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <template id="taskCardTemplate">
+        <div class="col-12">
+          <article class="card task-card">
+            <div class="card-body">
+              <div
+                class="d-flex justify-content-between gap-3"
+              >
+                <div class="flex-grow-1">
+                  <h2
+                    class="h5 task-title"
+                    data-field="title"
+                    contenteditable="true"
+                  ></h2>
+
+                  <p
+                    class="task-description"
+                    data-field="description"
+                    contenteditable="true"
+                  ></p>
+                </div>
+
+                <button
+                  class="favorite-button"
+                  data-action="favorite"
+                  type="button"
+                  aria-label="Toggle favorite"
+                >
+                  <i
+                    class="bi bi-star"
+                    data-field="favorite-icon"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+
+              <div class="task-badges">
+                <span
+                  class="badge text-bg-light border"
+                  data-field="category"
+                ></span>
+
+                <span
+                  class="badge text-bg-light border"
+                  data-field="priority"
+                ></span>
+
+                <span
+                  class="badge text-bg-light border"
+                  data-field="date"
+                ></span>
+              </div>
+
+              <div
+                class="task-tags mt-2"
+                data-field="tags"
+              ></div>
+
+              <div
+                class="task-links"
+                data-field="links"
+              ></div>
+
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <button
+                  class="btn btn-sm taskbuddy-button"
+                  data-action="save-edit"
+                  type="button"
+                >
+                  Save Edit
+                </button>
+
+                <a
+                  class="btn btn-sm btn-outline-secondary"
+                  data-field="edit-link"
+                >
+                  Edit Details
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </template>
+    </section>
+  </main>
+
+  <footer class="taskbuddy-footer">
+    <div class="container">
+      TaskBuddy
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/auth-guard.js"></script>
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

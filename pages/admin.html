@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <title>Admin | Task Buddy</title>
+</head>
+
+<body class="taskbuddy-page">
+  <nav class="taskbuddy-nav">
+    <div class="container nav-content">
+      <a class="taskbuddy-nav-brand" href="../index.html">TaskBuddy</a>
+
+      <div class="taskbuddy-nav-links">
+        <a href="../index.html">Home</a>
+        <a href="form.html">Add Task</a>
+        <a class="active" href="admin.html">Admin</a>
+        <span><i class="bi bi-person-circle"></i> <span id="profileName">User</span></span>
+        <button id="logoutBtn" class="btn btn-sm taskbuddy-button" type="button">Sign Out</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container taskbuddy-header">
+    <div class="taskbuddy-logo">TaskBuddy</div>
+    <h1>Admin</h1>
+  </header>
+
+  <main class="container pb-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <section class="card admin-card h-100">
+          <div class="card-body">
+            <h2 class="h5">Current Date and Time</h2>
+            <p id="currentDateTime" class="mb-0"></p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-md-6">
+        <section class="card admin-card h-100">
+          <div class="card-body">
+            <h2 class="h5">IP Address</h2>
+            <p id="ipAddress" class="mb-0">Loading</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-12">
+        <section class="card admin-card">
+          <div class="card-body">
+            <h2 class="h5">Browser Information</h2>
+            <p id="browserInfo" class="text-break mb-0"></p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-lg-6">
+        <section class="card admin-card h-100">
+          <div class="card-body">
+            <h2 class="h5">Local Storage Data</h2>
+            <pre id="localStorageData" class="mb-0"></pre>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-lg-6">
+        <section class="card admin-card h-100">
+          <div class="card-body">
+            <h2 class="h5">Session Storage Data</h2>
+            <pre id="sessionStorageData" class="mb-0"></pre>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-12">
+        <section class="card admin-card">
+          <div class="card-body">
+            <h2 class="h5">Saved Task JSON</h2>
+            <pre id="savedTaskData" class="mb-0"></pre>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Shared Auth Guard -->
+  <script src="../assets/js/auth-guard.js"></script>
+
+  <!-- Custom JS -->
+  <script src="../assets/js/admin.js"></script>
+</body>
+
+</html>

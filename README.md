@@ -1,6 +1,6 @@
-# COLOR RUSH
+# TaskBuddy
 
->Quick thinking Game!
+
 
 ## Authorship
 ### Hanley Prestridge
@@ -10,9 +10,9 @@
 
 ## User Story
 
-- **As a** player looking for a cool game,
-- **I want** to enter my name and play a color matching game,
-- **So that** I can have fun. 
+- **As a** busy college student
+- **I want** to have a way to organize my tasks,
+- **So that** I won't forget anything.
 
 
 ## Narrative

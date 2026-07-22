@@ -23,7 +23,7 @@
 
 ## Links
 
-## Gist: https://gist.github.com/hanleyp23/37f3f98f077f1acd5b87c692149c94ea.js
+## Gist: I was confused about this, I tried. https://gist.github.com/hanleyp23/37f3f98f077f1acd5b87c692149c94ea.js
 
 ### Wireframe: https://github.com/hanleyp23/charlie-taskbuddy-app/wiki/Wireframe
 

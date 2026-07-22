@@ -17,7 +17,7 @@
 
 
 ## Narrative
-### Color Rush is a fast-paced color matching game where players test their speed and accuracy by matching words to the correct color while trying to earn the highest score.
+### 
 
 ## About the App
 
@@ -25,7 +25,7 @@
 
 ## Gist: https://gist.github.com/hanleyp23/37f3f98f077f1acd5b87c692149c94ea.js
 
-### Wireframe: 
+### Wireframe: https://github.com/hanleyp23/charlie-taskbuddy-app/wiki/Wireframe
 
 ### Repo link: https://github.com/hanleyp23/charlie-taskbuddy-app
 
@@ -47,23 +47,25 @@
 
 ## Directory Structure
 ```text
+CHARLIE-TASKBUDDY-APP/
 ├── assets/
 │   ├── css/
-│   │   └── style.css
 │   ├── data/
-│   │   └── tasks.json
 │   └── js/
 │       ├── admin.js
+│       ├── app.js
 │       ├── auth-guard.js
 │       ├── auth.js
 │       ├── form.js
+│       ├── gist.js
 │       └── main.js
 ├── config/
 │   └── AGENTS.md
 ├── pages/
 │   ├── admin.html
 │   ├── auth.html
-│   └── form.html
+│   ├── form.html
+│   └── gist.html
 ├── index.html
 └── README.md
 ```

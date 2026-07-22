@@ -1,5 +1,6 @@
 # TaskBuddy
 
+> A task manager app for organizing school, work, and personal responsibilities.
 
 
 ## Authorship

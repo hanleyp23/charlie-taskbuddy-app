@@ -13,14 +13,15 @@
     return path.slice(0, path.lastIndexOf('/'));
   }
 
-  // Builds a app URL
+  // Builds app URL
   function buildAppUrl(filePath) {
     return `${window.location.origin}${getBasePath()}/${filePath}`;
   }
 
-  // Checks the login session
+  // Checks login 
   function isAuthenticated() {
-    return sessionStorage.getItem(AUTH_KEY) === 'true';
+  return Boolean(sessionStorage.getItem('sessionToken'));
+
   }
 
   // Gets the signed-in username
@@ -28,7 +29,7 @@
     return sessionStorage.getItem('sessionUser') || '';
   }
 
-  // Removes the login session
+  // Removes login session
   function clearSession() {
     sessionStorage.removeItem(AUTH_KEY);
     sessionStorage.removeItem('sessionUser');

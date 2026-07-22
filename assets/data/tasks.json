@@ -1,0 +1,54 @@
+[
+  {
+    "id": "task-1",
+    "title": "Finish SQL Homework",
+    "description": "Complete the Chapter 6 database assignment.",
+    "date": "2026-07-30",
+    "category": "school",
+    "priority": "high",
+    "tags": [
+      "school",
+      "sql",
+      "homework"
+    ],
+    "favorite": true,
+    "links": [
+      {
+        "label": "Canvas Assignment",
+        "url": "https://example.com/assignment"
+      },
+      {
+        "label": "Class Notes",
+        "url": "https://example.com/notes"
+      }
+    ]
+  },
+  {
+    "id": "task-2",
+    "title": "Update Work Schedule",
+    "description": "Ask off for work next week.",
+    "date": "2026-08-01",
+    "category": "work",
+    "priority": "high",
+    "tags": [
+      "work",
+      "schedule"
+    ],
+    "favorite": false,
+    "links": []
+  },
+  {
+    "id": "task-3",
+    "title": "Buy Dorm Supplies",
+    "description": "Purchase bedding, toiletries and storage containers.",
+    "date": "2026-08-05",
+    "category": "personal",
+    "priority": "medium",
+    "tags": [
+      "shopping",
+      "dorm"
+    ],
+    "favorite": true,
+    "links": []
+  }
+]

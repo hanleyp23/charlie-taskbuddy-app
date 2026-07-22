@@ -17,20 +17,20 @@
 
 
 ## Narrative
-### 
+### TaskBuddy is an app for keeping your tasks organized and easy to find.
 
 ## About the App
 
 ## Links
 
 ### Gist: https://gist.github.com/hanleyp23/37f3f98f077f1acd5b87c692149c94ea.js
-###I was confused about this, I tried.
+### I was confused about this, I tried.
 
 ### Wireframe: https://github.com/hanleyp23/charlie-taskbuddy-app/wiki/Wireframe
 
 ### Repo link: https://github.com/hanleyp23/charlie-taskbuddy-app
 
-### GitHub Pages app link: hanleyp23.github.io/charlie-taskbuddy-app/
+### GitHub Pages app link: https://hanleyp23.github.io/charlie-taskbuddy-app/
 
 ### Issue game ideas link:
 
@@ -39,13 +39,14 @@
 
 ## Technologies Used
 -HTML
--VS Code online
+-VS Code 
 -CSS
 -Bootstrap 5
 -JavaScript
 -GitHub Pages
 -Bootstrap Icons
 -Google Format
+-canva
 
 ## Directory Structure
 ```text

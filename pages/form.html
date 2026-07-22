@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet"
+    href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Add Task | Task Buddy</title>
+</head>
+
+<body class="taskbuddy-page">
+  <nav class="taskbuddy-nav">
+    <div class="container nav-content">
+      <a class="taskbuddy-nav-brand" href="../index.html">
+        TaskBuddy
+      </a>
+
+      <div class="taskbuddy-nav-links">
+        <a href="../index.html">Home</a>
+        <a class="active" href="form.html">Add Task</a>
+        <a href="admin.html">Admin</a>
+
+        <span>
+          <i class="bi bi-person-circle"></i>
+          <span id="profileName">User</span>
+        </span>
+
+        <button id="logoutBtn"
+          class="btn btn-sm taskbuddy-button"
+          type="button">
+          Sign Out
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container taskbuddy-header">
+    <div class="taskbuddy-logo">TaskBuddy</div>
+    <h1 id="formHeading">Add Task</h1>
+    <p>Create a new school, work, or personal task</p>
+  </header>
+
+  <main class="container pb-5">
+    <section class="card form-card">
+      <div class="card-body p-4">
+        <form id="taskForm"
+          class="needs-validation"
+          novalidate>
+
+          <div class="mb-3">
+            <label for="taskTitle" class="form-label">
+              Task Title
+            </label>
+            <input id="taskTitle"
+              class="form-control"
+              type="text"
+              required>
+            <div class="invalid-feedback">
+              Enter a task title
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="taskDescription" class="form-label">
+              Description
+            </label>
+            <textarea id="taskDescription"
+              class="form-control"
+              rows="4"
+              required></textarea>
+            <div class="invalid-feedback">
+              Enter a description
+            </div>
+          </div>
+
+          <div class="row g-3 mb-3">
+            <div class="col-md-4">
+              <label for="taskDate" class="form-label">
+                Due Date
+              </label>
+              <input id="taskDate"
+                class="form-control"
+                type="text"
+                autocomplete="off"
+                required>
+              <div class="invalid-feedback">
+                Choose a due date
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="taskCategory" class="form-label">
+                Category
+              </label>
+              <select id="taskCategory"
+                class="form-select"
+                required>
+                <option value="">Choose a category</option>
+                <option value="school">School</option>
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+              </select>
+              <div class="invalid-feedback">
+                Choose a category
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="taskPriority" class="form-label">
+                Priority
+              </label>
+              <select id="taskPriority"
+                class="form-select"
+                required>
+                <option value="">Choose a priority</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+              </select>
+              <div class="invalid-feedback">
+                Choose a priority
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="taskTags" class="form-label">
+              Tags
+            </label>
+            <input id="taskTags"
+              class="form-control"
+              type="text"
+              placeholder="school, homework, sql">
+            <div class="form-text">
+              Separate tags with commas
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="taskLinks" class="form-label">
+              Links
+            </label>
+            <textarea id="taskLinks"
+              class="form-control"
+              rows="4"
+              placeholder="Canvas | https://example.com"></textarea>
+            <div class="form-text">
+              Put each link on a new line using Label | URL
+            </div>
+          </div>
+
+          <div class="form-check mb-4">
+            <input id="taskFavorite"
+              class="form-check-input"
+              type="checkbox">
+            <label for="taskFavorite" class="form-check-label">
+              Add to favorites
+            </label>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2">
+            <button id="submitButton"
+              class="btn taskbuddy-button"
+              type="submit">
+              Save Task
+            </button>
+
+            <a class="btn btn-outline-secondary"
+              href="../index.html">
+              Cancel
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="taskbuddy-footer">
+    <p class="mb-0">TaskBuddy</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+  <script src="../assets/js/auth-guard.js"></script>
+  <script src="../assets/js/form.js"></script>
+</body>
+
+</html>

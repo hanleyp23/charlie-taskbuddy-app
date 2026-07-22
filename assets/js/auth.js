@@ -65,7 +65,7 @@
     const password = passBox.value.trim();
 
     if (!username || !password) {
-      showMessage('Enter a username and password.', true);
+      showMessage('Wrong Password.', true);
       return;
     }
 

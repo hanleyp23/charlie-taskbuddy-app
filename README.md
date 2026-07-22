@@ -23,11 +23,13 @@
 
 ## Links
 
-### Wireframe:
+## Gist: https://gist.github.com/hanleyp23/37f3f98f077f1acd5b87c692149c94ea.js
 
-### Repo link:
+### Wireframe: 
 
-### GitHub Pages app link: 
+### Repo link: https://github.com/hanleyp23/charlie-taskbuddy-app
+
+### GitHub Pages app link: hanleyp23.github.io/charlie-taskbuddy-app/
 
 ### Issue game ideas link:
 

@@ -23,7 +23,8 @@
 
 ## Links
 
-## Gist: I was confused about this, I tried. https://gist.github.com/hanleyp23/37f3f98f077f1acd5b87c692149c94ea.js
+### Gist: https://gist.github.com/hanleyp23/37f3f98f077f1acd5b87c692149c94ea.js
+###I was confused about this, I tried.
 
 ### Wireframe: https://github.com/hanleyp23/charlie-taskbuddy-app/wiki/Wireframe
 
@@ -44,10 +45,10 @@
 -JavaScript
 -GitHub Pages
 -Bootstrap Icons
+-Google Format
 
 ## Directory Structure
 ```text
-CHARLIE-TASKBUDDY-APP/
 ├── assets/
 │   ├── css/
 │   ├── data/

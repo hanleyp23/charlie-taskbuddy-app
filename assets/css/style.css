@@ -1,13 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
 }
 
-button {
-  margin-top: 10px;
+.taskbuddy-page {
+  min-height: 100vh;
+  background-color: #24597c;
+  color: white;
 }
 
-a {
+.taskbuddy-nav {
+  padding: 1rem 0;
+  border-bottom: 1px solid white;
+}
+
+.nav-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.taskbuddy-nav-brand {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.taskbuddy-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.taskbuddy-nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.taskbuddy-nav-links a:hover,
+.taskbuddy-nav-links a.active {
+  color: #f3a3e3;
+  text-decoration: underline;
+}
+
+.taskbuddy-header {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.taskbuddy-logo {
   display: inline-block;
-  margin-bottom: 20px;
+  padding: 0.75rem 2.5rem;
+  margin-bottom: 1rem;
+  background-color: #f3a3e3;
+  border-radius: 50%;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+.login-layout {
+  display: grid;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  place-items: center;
+}
+
+.login-panel {
+  width: 100%;
+  max-width: 34rem;
+  text-align: center;
+}
+
+.login-icon {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 6rem;
+}
+
+.login-form {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  color: black;
+  text-align: left;
+}
+
+.login-description {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.taskbuddy-button {
+  background-color: #f3a3e3;
+  border: 2px solid black;
+  border-radius: 2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.taskbuddy-button:hover,
+.taskbuddy-button.is-active {
+  background-color: white;
+  color: black;
+}
+
+.task-controls {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  color: black;
+}
+
+.search-box {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.section-heading {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.task-card {
+  border: 3px solid transparent;
+  border-radius: 1rem;
+  color: black;
+}
+
+.task-card.is-favorite {
+  border-color: #f3a3e3;
+}
+
+.favorite-button {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.task-card.is-favorite .favorite-button {
+  color: #b0007a;
+}
+
+.task-badges,
+.task-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.task-title[contenteditable="true"]:focus,
+.task-description[contenteditable="true"]:focus {
+  outline: 2px dashed #f3a3e3;
+}
+
+.form-card,
+.admin-card {
+  border-radius: 1rem;
+  color: black;
+}
+
+pre {
+  max-height: 24rem;
+  padding: 1rem;
+  overflow: auto;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  white-space: pre-wrap;
+}
+
+.taskbuddy-footer {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .nav-content,
+  .taskbuddy-nav-links {
+    justify-content: center;
+  }
+
+  .taskbuddy-nav-brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .taskbuddy-logo {
+    font-size: 2rem;
+  }
 }

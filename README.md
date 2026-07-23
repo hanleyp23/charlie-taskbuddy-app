@@ -32,7 +32,7 @@
 
 ### GitHub Pages app link: https://hanleyp23.github.io/charlie-taskbuddy-app/
 
-### Issue game ideas link: 
+### Issue game ideas link: https://github.com/hanleyp23/charlie-taskbuddy-app/issues?q=state%3Aopen%20label%3ABrainstorm
 
 ### Sprint99 Milestones Link: https://github.com/hanleyp23/charlie-taskbuddy-app/milestone/1
 

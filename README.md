@@ -32,9 +32,9 @@
 
 ### GitHub Pages app link: https://hanleyp23.github.io/charlie-taskbuddy-app/
 
-### Issue game ideas link:
+### Issue game ideas link: 
 
-### Sprint99 Milestones Link: 
+### Sprint99 Milestones Link: https://github.com/hanleyp23/charlie-taskbuddy-app/milestone/1
 
 
 ## Technologies Used
